@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -15,13 +16,14 @@
     align-items: center;
     width: 1080px;
     height: 1920px;
-    background-image: url('./public/imgs/_old-bg-light.png');
+    background-image: url('./public/imgs/institucional/Grupo\ 269.png');
   }
   .bg-fundo-Sec01{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1080px;
+    height: 1920px;
     align-items: flex-start;
     background-image: url('./public/imgs/institucional/Grupo\ 268.png');
   }
@@ -30,8 +32,8 @@
     flex-direction: column;
     align-items: center;
     width: 1080px;
+    height: 1920px;
     align-items: flex-start;
-    border: 2px solid #1B365D59;
     background-image: url('./public/imgs/institucional/Grupo\ de\ máscara\ 1.png');
   }
   .bg-fundo-Sec03{
@@ -39,8 +41,8 @@
     flex-direction: column;
     align-items: center;
     width: 1080px;
+    height: 1920px;
     align-items: flex-start;
-    border: 2px solid #1B365D59;
     background-image: url('./public/imgs/institucional/mallorca/Grupo\ de\ máscara\ 2.png');
   }
   .bg-fundo-Sec04{
@@ -48,8 +50,9 @@
     flex-direction: column;
     align-items: center;
     width: 1080px;
+    height: 1920px;
+    overflow: hidden;
     align-items: flex-start;
-    border: 2px solid #1B365D59;
     background-image: url('./public/imgs/institucional/mallorca/Grupo\ de\ máscara\ 2.png');
   }
   .tittle{
@@ -70,7 +73,7 @@
    <section id="btnSec0-Sec-0 Sec-0" class="btnSec0-Sec-0">
     <main class="bg-fundo">
         <div class="mt-[83px]">
-            <img src="./public/imgs/logo.png" class="w-[494px] h-[107px]"/></a>
+            <img src="./public/imgs/institucional/LOGO.png" class="w-[494px] h-[107px]"/></a>
         </div>
 
         <div class=" flex gap-6  mt-8">
@@ -358,7 +361,7 @@
    </section>
    <section id="Sec-2" class="btnSec2-Sec-2"> 
     <main class="bg-fundo-Sec02">
-      <div class="p-16">
+      <div class="p-16 h-[1319px]">
         <div class=" w-[100%] h-[80px] flex justify-center " >
           <img src="./public/imgs/institucional/LOGO.png" alt="" class="w-[340px] h-[80px] bg-no-repeat">
         </div>
@@ -368,12 +371,12 @@
         </div>
   
         <div>
-          <p class=" text-blue-900 opacity-100 text-3xl">
+          <p class=" text-blue-900 opacity-100 " style="font-size: 33px; text-align: justify;">
             Durante a catástrofe climática que atingiu o Rio Grande do Sul em maio de 2024, a Quantitas, que possui sede na capital gaúcha, esteve empenhada em garantir a segurança de seus funcionários e familiares, além de promover o engajamento com as comunidades, <span class="text-blue-900">oferecendo suporte através de voluntariado, produção de marmitas, doações e outros esforços.</span> 
           </p>
         </div>
   
-        <div class="flex flex-row items-center justify-center gap-10 w-full mt-[70px]x">
+        <div class="flex flex-row items-center justify-center gap-10 w-full mt-[35px]">
           <img src="./public/imgs/institucional/imagens.png" class=""/>
         </div>
   
@@ -475,9 +478,18 @@
         <div>
           <img src="./public/imgs/institucional/galapagos/Grupo 226.png" alt=""  class="mt-[57px]">
         </div>
-        <button id="btnBackToHome"
-        class="mt-10 mx-auto px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700"
-        >Voltar</button>
+        <div class="flex flex-row mt-10 justify-between">
+          <div>
+            <button id="btnBackToHome">
+              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset="">
+            </button>
+            <lottie-player src="/filesJS/lottieLeft.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop controls autoplay></lottie-player> 
+          </div>
+  
+          <div style="width: 400px; height: 400px;">
+            <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
+          </div>
+        </div>
       </div>
 
     </main>
@@ -629,6 +641,7 @@
         showSection('.btnSec0-Sec-0');
       });
     })
+    
   </script>
 </body>
 </html>
