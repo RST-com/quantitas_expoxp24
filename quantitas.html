@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./js/tailwind.js"></script>
-  <script src="./js/lottie.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -25,6 +25,7 @@
     width: 1080px;
     height: 1920px;
     align-items: flex-start;
+    overflow: hidden;
     background-image: url('./public/imgs/institucional/Grupo\ 268.png');
   }
   .bg-fundo-Sec02{
@@ -34,6 +35,7 @@
     width: 1080px;
     height: 1920px;
     align-items: flex-start;
+    overflow: hidden;
     background-image: url('./public/imgs/institucional/Grupo\ de\ máscara\ 1.png');
   }
   .bg-fundo-Sec03{
@@ -43,6 +45,7 @@
     width: 1080px;
     height: 1920px;
     align-items: flex-start;
+    overflow: hidden;
     background-image: url('./public/imgs/institucional/mallorca/Grupo\ de\ máscara\ 2.png');
   }
   .bg-fundo-Sec04{
@@ -68,7 +71,6 @@
     display: none;
   }
 </style>
-
 <body>
   <div>
    <section id="btnSec0-Sec-0 Sec-0" class="btnSec0-Sec-0">
@@ -90,15 +92,21 @@
           >
           <img src="./public/imgs/institucional/Grupo 114.png"
           />
-          <h2 style="text-align: left;
-          font: normal normal bold;
-          font-size: 30px;
-          color: white;
-          margin-top: 85px;
-          font-weight: 300;
-          ">
-          <span>INSTITUCIONAL</span></h2>
-            <!-- <Lottie animationData={toRightArrows} style={lottieStyles} /> -->
+          <div style="margin-top: 85px;">
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; ">
+              <h2 style="text-align: left;
+              font: normal normal bold;
+              font-size: 30px;
+              color: white;
+              font-weight: 300;
+              ">
+              <span>INSTITUCIONAL</span></h2>
+            
+              <div>
+                <lottie-player src="/js/lottieRight.json" background="transparent" speed="1" style="width: 100px; height: 100px; transform: rotate(270deg);" direction="1" mode="normal" loop autoplay></lottie-player> 
+              </div>
+            </div>
+          </div>
           </div>
           <div
           style="width: 470px;
@@ -112,16 +120,24 @@
           >
           <img src="./public/imgs/institucional/Grupo 307.png"
           />
-          <h2 style="text-align: left;
-          font: normal normal bold;
-          font-size: 30px;
-          color: white;
-          font-weight: 300;
-          ">
-          <span>#SOSRS</span><br>
-          AJUDA ÀS VÍTIMAS<br>
-          DAS ENCHENTES</h2>
-            <!-- <Lottie animationData={toRightArrows} style={lottieStyles} /> -->
+          <div>
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+              <h2 style="text-align: left;
+              font: normal normal bold;
+              font-size: 30px;
+              color: white;
+              font-weight: 300;
+              ">
+              <span>#SOSRS</span><br>
+              AJUDA ÀS VÍTIMAS<br>
+              DAS ENCHENTES
+            </h2>
+              <div>
+                <lottie-player src="/js/lottieRight.json" background="transparent" speed="1" style="width: 100px; height: 100px; transform: rotate(270deg); margin-top: 70px;" direction="1" mode="normal" loop autoplay></lottie-player> 
+              </div>
+            </div>
+          </div>
+
           </div>
         </div>
 
@@ -140,15 +156,20 @@
           >
           <img src="./public/imgs/institucional/Grupo 308.png"
           />
-          <h2 style="text-align: left;
-          font: normal normal bold;
-          font-size: 30px;
-          color: white;
-          font-weight: 300;
-          ">
-          QUANTITAS<br>
-          FIC FIM<br>
-          <span>MALLORCA</span></h2>
+          <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-top: 16px;">
+            <h2 style="text-align: left;
+            font: normal normal bold;
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+            ">
+            QUANTITAS<br>
+            FIC FIM<br>
+            <span>MALLORCA</span></h2>
+            <div>
+              <lottie-player src="/js/lottieRight.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top: 64px; transform: rotate(270deg);" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </div>
+          </div>
           </div>
           </div>
 
@@ -168,15 +189,20 @@
           >
           <img src="./public/imgs/institucional/Grupo 306.png"
           />
-          <h2 style="text-align: left;
-          font: normal normal bold;
-          font-size: 30px;
-          color: white;
-          font-weight: 300;
-          ">
-          QUANTITAS<br>
-          FIM<br>
-          <span>GALÁPAGOS</span></h2>
+          <div  style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-top: 16px;">
+            <h2 style="text-align: left;
+            font: normal normal bold;
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+            ">
+            QUANTITAS<br>
+            FIM<br>
+            <span>GALÁPAGOS</span></h2>
+            <div>
+              <lottie-player src="/js/lottieRight.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top: 64px; transform: rotate(270deg);" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </div>
+          </div>
           </div>
           </div>
           </div>
@@ -197,15 +223,20 @@
           >
           <img src="./public/imgs/institucional/Grupo 308.png"
           />
-          <h2 style="text-align: left;
-          font: normal normal bold;
-          font-size: 30px;
-          color: white;
-          font-weight: 300;
-          ">
-          QUANTITAS<br>
-          FIA<br>
-          <span>MONTECRISTO</span></h2>
+          <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-top: 16px;">
+            <h2 style="text-align: left;
+            font: normal normal bold;
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+            ">
+            QUANTITAS<br>
+            FIA<br>
+            <span>MONTECRISTO</span></h2>
+            <div>
+              <lottie-player src="/js/lottieRight.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top: 64px; transform: rotate(270deg);" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </div>
+          </div>
           </div>
           </div>
 
@@ -225,15 +256,20 @@
           >
           <img src="./public/imgs/institucional/Grupo 306.png"
           />
-          <h2 style="text-align: left;
-          font: normal normal bold;
-          font-size: 30px;
-          color: white;
-          font-weight: 300;
-          ">
-          QUANTITAS<br>
-          <span>CAPRI</span> XP SEG<br>
-          PREV FIC FIM</h2>
+          <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-top: 16px;">
+            <h2 style="text-align: left;
+            font: normal normal bold;
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+            ">
+            QUANTITAS<br>
+            <span>CAPRI</span> XP SEG<br>
+            PREV FIC FIM</h2>
+            <div>
+              <lottie-player src="/js/lottieRight.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top: 64px; transform: rotate(270deg);" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </div>
+          </div>
           </div>
           </div>
           </div>
@@ -254,15 +290,20 @@
           >
           <img src="./public/imgs/institucional/Grupo 308.png"
           />
-          <h2 style="text-align: left;
-          font: normal normal bold;
-          font-size: 30px;
-          color: white;
-          font-weight: 300;
-          ">
-          QUANTITAS<br>
-          FIA <br>
-          <span>MALDIVAS LS</span></h2>
+          <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-top: 16px;">
+            <h2 style="text-align: left;
+            font: normal normal bold;
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+            ">
+            QUANTITAS<br>
+            FIA <br>
+            <span>MALDIVAS LS</span></h2>
+            <div>
+              <lottie-player src="/js/lottieRight.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top: 64px; transform: rotate(270deg);" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </div>
+          </div>
           </div>
           </div>
 
@@ -281,15 +322,20 @@
           >
           <img src="./public/imgs/institucional/Grupo 311.png"
           />
-          <h2 style="text-align: left;
-          font: normal normal bold;
-          font-size: 30px;
-          color: white;
-          font-weight: 300;
-          ">
-          <span>MATERIAIS</span><br>
-          E CANAIS<br>
-          DE <span>CONTATO</span></h2>
+          <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-top: 16px;">
+            <h2 style="text-align: left;
+            font: normal normal bold;
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+            ">
+            <span>MATERIAIS</span><br>
+            E CANAIS<br>
+            DE <span>CONTATO</span></h2>
+            <div>
+              <lottie-player src="/js/lottieRight.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top: 64px; transform: rotate(270deg);" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </div>
+          </div>
           </div>
           </div>
           </div>
@@ -353,9 +399,16 @@
             </p>
           </div>
         </div>
-        <button id="btnBackToHome"
-        class="mt-10 mx-auto px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700"
-        >Voltar</button>
+        
+        <div class="flex flex-row mt-10 justify-between">
+          <div>
+            <button id="btnBackToHome">
+              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset=""
+              >
+              <lottie-player src="/js/lottieLeft.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top:-83px; transform: rotate(90deg); margin-left: -13px;" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </button>
+          </div>
+        </div>
       </div>
 
     </main>
@@ -421,9 +474,16 @@
             </div>
           </div>
         </div>
-        <button id="btnBackToHome"
-        class="mt-10 mx-auto px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700"
-        >Voltar</button>
+        
+        <div class="flex flex-row mt-10 justify-between">
+          <div>
+            <button id="btnBackToHome">
+              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset=""
+              >
+              <lottie-player src="/js/lottieLeft.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top:-83px; transform: rotate(90deg); margin-left: -13px;" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </button>
+          </div>
+        </div>
       </div>
 
 
@@ -451,9 +511,21 @@
           <img src="./public/imgs/institucional/mallorca/Grupo 226.png" alt="">
         </div>
       
-        <button id="btnBackToHome"
-        class="mt-10 mx-auto px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700"
-        >Voltar</button>
+        <div class="flex flex-row mt-10 justify-between">
+          <div>
+            <button id="btnBackToHome">
+              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset=""
+              >
+              <lottie-player src="/js/lottieLeft.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top:-83px; transform: rotate(90deg); margin-left: -13px;" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </button>
+          </div>
+          <div style="width: 400px; height: 400px;">
+            <a href="./public/pdfs/Quantitas Tela Touch Jun 2024 V2.pdf">
+              <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
+            </a>
+          </div>
+          <iframe class="embed-responsive-item" src="./public/pdfs/Quantitas Tela Touch Jun 2024 V2.pdf"></iframe>
+        </div>
   
       </div>
     </main>
@@ -481,18 +553,19 @@
         </div>
         <div class="flex flex-row mt-10 justify-between">
           <div>
-            <button id="btnBackToHome" class="btn-back-container">
-              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset="">
+            <button id="btnBackToHome">
+              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset=""
+              >
+              <lottie-player src="/js/lottieLeft.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top:-83px; transform: rotate(90deg); margin-left: -13px;" direction="1" mode="normal" loop autoplay></lottie-player> 
             </button>
-            <lottie-player src="./js/lottieRight.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop controls autoplay></lottie-player> 
           </div>
-  
           <div style="width: 400px; height: 400px;">
-            <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
+            <a href="">
+              <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
+            </a>
           </div>
         </div>
       </div>
-
     </main>
    </section>
    <section id="btnSec5-Sec-5 Sec-5" class="btnSec5-Sec-5"> 
@@ -518,9 +591,20 @@
           <img src="./public/imgs/institucional/montecristo/Grupo 283.png" alt="" class="mt-[32px]">
         </div>
       
-        <button id="btnBackToHome"
-        class="mt-10 mx-auto px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700"
-        >Voltar</button>
+        <div class="flex flex-row mt-10 justify-between">
+          <div>
+            <button id="btnBackToHome">
+              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset=""
+              >
+              <lottie-player src="/js/lottieLeft.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top:-83px; transform: rotate(90deg); margin-left: -13px;" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </button>
+          </div>
+          <div style="width: 400px; height: 400px;">
+            <a href="">
+              <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
+            </a>
+          </div>
+        </div>
       </div>
 
     </main>
@@ -550,9 +634,20 @@
           <img src="./public/imgs/institucional/capri/Grupo 286.png" alt="" class="mt-[32px]">
         </div>
       
-        <button id="btnBackToHome"
-        class="mt-10 mx-auto px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700"
-        >Voltar</button>
+        <div class="flex flex-row mt-10 justify-between">
+          <div>
+            <button id="btnBackToHome">
+              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset=""
+              >
+              <lottie-player src="/js/lottieLeft.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top:-83px; transform: rotate(90deg); margin-left: -13px;" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </button>
+          </div>
+          <div style="width: 400px; height: 400px;">
+            <a href="">
+              <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
+            </a>
+          </div>
+        </div>
       </div>
 
     </main>
@@ -579,9 +674,20 @@
           <img src="./public/imgs/institucional/maldivas/Grupo 283.png" alt="" class="mt-[32px]">
         </div>
       
-        <button id="btnBackToHome"
-        class="mt-10 mx-auto px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700"
-        >Voltar</button>
+        <div class="flex flex-row mt-10 justify-between">
+          <div>
+            <button id="btnBackToHome">
+              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset=""
+              >
+              <lottie-player src="/js/lottieLeft.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top:-83px; transform: rotate(90deg); margin-left: -13px;" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </button>
+          </div>
+          <div style="width: 400px; height: 400px;">
+            <a href="">
+              <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
+            </a>
+          </div>
+        </div>
       </div>
 
     </main>
@@ -604,9 +710,21 @@
         <div>
           <img src="./public/imgs/institucional/materiais/Grupo 277.png" alt="" class=" mt-[32px]">
         </div>
-        <button id="btnBackToHome"
-        class="mt-10 mx-auto px-6 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700"
-        >Voltar</button>
+        
+        <div class="flex flex-row mt-10 justify-between">
+          <div>
+            <button id="btnBackToHome">
+              <img src="./public/imgs/institucional/Retângulo 12.png" alt="" srcset=""
+              >
+              <lottie-player src="/js/lottieLeft.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top:-83px; transform: rotate(90deg); margin-left: -13px;" direction="1" mode="normal" loop autoplay></lottie-player> 
+            </button>
+          </div>
+          <div style="width: 400px; height: 400px;">
+            <a href="">
+              <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
+            </a>
+          </div>
+        </div>
       </div>
 
     </main>
