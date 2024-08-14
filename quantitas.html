@@ -70,8 +70,35 @@
   section:not(:first-of-type) {
     display: none;
   }
+  .pdf {
+        width: 100%;
+
+    }
 </style>
+<script type=”module” src="./js/bypass.js"></script>
+<script src="js/custom-elements-builtin.js"></script>
+
 <body>
+ 
+
+ 
+
+        <div id="pdfModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-10 hidden">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden  h-full w-full">
+              <div class="flex justify-between items-center p-4 bg-gray-800">
+                  <h2 class="text-white" style="font-size: 14px;">PDF </h2>
+                  <button id="closeModal" class="text-white">&times;</button>
+              </div>
+              <iframe class="pdf" referrerpolicy="origin" is="x-frame-bypass"
+                src=
+"./public/pdfs/Quantitas Tela Touch Jun 2024 V2.pdf#view=FitH"
+            width="800" height="100%">
+        </iframe>
+          </div>
+      </div>
+
+
+        
   <div>
    <section id="btnSec0-Sec-0 Sec-0" class="btnSec0-Sec-0">
     <main class="bg-fundo">
@@ -520,11 +547,11 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="./public/pdfs/Quantitas Tela Touch Jun 2024 V2.pdf">
+            <a href="#" id="openModal">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
-          <iframe class="embed-responsive-item" src="./public/pdfs/Quantitas Tela Touch Jun 2024 V2.pdf"></iframe>
+
         </div>
   
       </div>
@@ -560,7 +587,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="">
+            <a href="#" id="openModal">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -600,7 +627,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="">
+            <a href="#" id="openModal">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -643,7 +670,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="">
+            <a href="#" id="openModal">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -683,7 +710,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="">
+            <a href="#" id="openModal">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -720,7 +747,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="">
+            <a href="#" id="openModal">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -762,5 +789,31 @@
     })
     
   </script>
+<script>
+  // Get modal elements
+  const modal = document.getElementById('pdfModal');
+  const openModalBtn = document.querySelectorAll('#openModal');
+  const closeModalBtn = document.getElementById('closeModal');
+
+  // Open modal when button is clicked
+  openModalBtn.forEach(item=>{
+    item.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+  });
+  })
+
+  // Close modal when close button is clicked
+  closeModalBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+  });
+
+  // Close modal when clicking outside of the modal content
+  window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+          modal.classList.add('hidden');
+      }
+  });
+</script>
 </body>
+
 </html>
