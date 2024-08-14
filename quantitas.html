@@ -79,26 +79,21 @@
 <script src="js/custom-elements-builtin.js"></script>
 
 <body>
- 
 
- 
-
-        <div id="pdfModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-10 hidden">
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden  h-[70%] w-[70%]">
-              <div class="flex justify-between items-center p-4 bg-gray-800">
-                  <h2 class="text-white" style="font-size: 14px;">PDF </h2>
-                  <button id="closeModal" class="text-white">&times;</button>
-              </div>
-              <iframe class="pdf" referrerpolicy="origin" is="x-frame-bypass"
-                src=
+<div id="pdfModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-10 hidden">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden  h-[70%] w-[70%]">
+            <div class="flex justify-between items-center p-4 bg-gray-800">
+                <h2 class="text-white" style="font-size: 14px;">PDF </h2>
+                <button id="closeModal" class="text-white">&times;</button>
+            </div>
+            <iframe class="pdf" referrerpolicy="origin" is="x-frame-bypass"
+              src=
 "./public/pdfs/Quantitas Tela Touch Jun 2024 V2.pdf#view=FitH"
-            width="800" height="100%">
-        </iframe>
-          </div>
-      </div>
-
-
-        
+          width="800" height="100%">
+      </iframe>
+        </div>
+    </div>
+ 
   <div>
    <section id="btnSec0-Sec-0 Sec-0" class="btnSec0-Sec-0">
     <main class="bg-fundo">
@@ -547,7 +542,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="#" id="openModal">
+            <a href="#" id="openModal" class="mallorca.pdf">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -587,7 +582,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="#" id="openModal">
+            <a href="#" id="openModal" class="galapagos.pdf">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -627,7 +622,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="#" id="openModal">
+            <a href="#" id="openModal" class="montecristo.pdf">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -670,7 +665,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="#" id="openModal">
+            <a href="#" id="openModal" class="capri.pdf">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -710,7 +705,7 @@
             </button>
           </div>
           <div style="width: 400px; height: 400px;">
-            <a href="#" id="openModal">
+            <a href="#" id="openModal" class="maldivas.pdf">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
           </div>
@@ -746,11 +741,11 @@
               <lottie-player src="/js/lottieLeft.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin-top:-83px; transform: rotate(90deg); margin-left: -13px;" direction="1" mode="normal" loop autoplay></lottie-player> 
             </button>
           </div>
-          <div style="width: 400px; height: 400px;">
+          <!-- <div style="width: 400px; height: 400px;">
             <a href="#" id="openModal">
               <img src="./public/imgs/institucional/Grupo 228.png" alt="" srcset="">
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -792,12 +787,15 @@
 <script>
   // Get modal elements
   const modal = document.getElementById('pdfModal');
+  const iframe = document.querySelector('.pdf');
   const openModalBtn = document.querySelectorAll('#openModal');
   const closeModalBtn = document.getElementById('closeModal');
 
   // Open modal when button is clicked
   openModalBtn.forEach(item=>{
     item.addEventListener('click', () => {
+      console.log(`./public/pdfs/${item.classList.value}#view=FitH`);
+      iframe.src = `./public/pdfs/${item.classList.value}#view=FitH`;
       modal.classList.remove('hidden');
   });
   })
